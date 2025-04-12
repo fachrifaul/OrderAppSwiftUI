@@ -11,7 +11,19 @@ import SwiftUI
 struct OrderAppSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            let productRepository = ProductRepository()
+            let courierRepository = CourierRepository()
+            
+            let fetchProductsUseCase = FetchProductsUseCase(repository: productRepository)
+            let fetchCourierRulesUseCase = FetchCourierRulesUseCase(repository: courierRepository)
+            
+            let viewModel = OrderViewModel(
+                fetchProductsUseCase: fetchProductsUseCase,
+                fetchCourierRulesUseCase: fetchCourierRulesUseCase
+            )
+            
+            OrderView(viewModel: viewModel)
         }
     }
 }

@@ -14,35 +14,35 @@
 			remoteGlobalIDString = A298345F2DA794C600394421;
 			remoteInfo = OrderAppSwiftUI;
 		};
-		A298347B2DA794C800394421 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A29834582DA794C600394421 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A298345F2DA794C600394421;
-			remoteInfo = OrderAppSwiftUI;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A29834602DA794C600394421 /* OrderAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29834702DA794C800394421 /* OrderAppSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderAppSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A298347A2DA794C800394421 /* OrderAppSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderAppSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A2EDEA032DA7BB9C0005A4F8 /* Exceptions for "OrderAppSwiftUI" folder in "OrderAppSwiftUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Data/Local/couriers.json,
+			);
+			target = A298346F2DA794C800394421 /* OrderAppSwiftUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A29834622DA794C600394421 /* OrderAppSwiftUI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A2EDEA032DA7BB9C0005A4F8 /* Exceptions for "OrderAppSwiftUI" folder in "OrderAppSwiftUITests" target */,
+			);
 			path = OrderAppSwiftUI;
 			sourceTree = "<group>";
 		};
 		A29834732DA794C800394421 /* OrderAppSwiftUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = OrderAppSwiftUITests;
-			sourceTree = "<group>";
-		};
-		A298347D2DA794C800394421 /* OrderAppSwiftUIUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = OrderAppSwiftUIUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -62,13 +62,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A29834772DA794C800394421 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +70,6 @@
 			children = (
 				A29834622DA794C600394421 /* OrderAppSwiftUI */,
 				A29834732DA794C800394421 /* OrderAppSwiftUITests */,
-				A298347D2DA794C800394421 /* OrderAppSwiftUIUITests */,
 				A29834612DA794C600394421 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +79,6 @@
 			children = (
 				A29834602DA794C600394421 /* OrderAppSwiftUI.app */,
 				A29834702DA794C800394421 /* OrderAppSwiftUITests.xctest */,
-				A298347A2DA794C800394421 /* OrderAppSwiftUIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,29 +131,6 @@
 			productReference = A29834702DA794C800394421 /* OrderAppSwiftUITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A29834792DA794C800394421 /* OrderAppSwiftUIUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A298348A2DA794C800394421 /* Build configuration list for PBXNativeTarget "OrderAppSwiftUIUITests" */;
-			buildPhases = (
-				A29834762DA794C800394421 /* Sources */,
-				A29834772DA794C800394421 /* Frameworks */,
-				A29834782DA794C800394421 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A298347C2DA794C800394421 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				A298347D2DA794C800394421 /* OrderAppSwiftUIUITests */,
-			);
-			name = OrderAppSwiftUIUITests;
-			packageProductDependencies = (
-			);
-			productName = OrderAppSwiftUIUITests;
-			productReference = A298347A2DA794C800394421 /* OrderAppSwiftUIUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,10 +145,6 @@
 						CreatedOnToolsVersion = 16.2;
 					};
 					A298346F2DA794C800394421 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = A298345F2DA794C600394421;
-					};
-					A29834792DA794C800394421 = {
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = A298345F2DA794C600394421;
 					};
@@ -202,7 +166,6 @@
 			targets = (
 				A298345F2DA794C600394421 /* OrderAppSwiftUI */,
 				A298346F2DA794C800394421 /* OrderAppSwiftUITests */,
-				A29834792DA794C800394421 /* OrderAppSwiftUIUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,13 +179,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A298346E2DA794C800394421 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A29834782DA794C800394421 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +202,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A29834762DA794C800394421 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,11 +209,6 @@
 			isa = PBXTargetDependency;
 			target = A298345F2DA794C600394421 /* OrderAppSwiftUI */;
 			targetProxy = A29834712DA794C800394421 /* PBXContainerItemProxy */;
-		};
-		A298347C2DA794C800394421 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A298345F2DA794C600394421 /* OrderAppSwiftUI */;
-			targetProxy = A298347B2DA794C800394421 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -321,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -378,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -395,7 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"OrderAppSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"OrderAppSwiftUI/Resource/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -403,10 +347,6 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fachri.OrderAppSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"OrderAppSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"OrderAppSwiftUI/Resource/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -431,10 +371,6 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fachri.OrderAppSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -480,38 +416,6 @@
 			};
 			name = Release;
 		};
-		A298348B2DA794C800394421 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fachri.OrderAppSwiftUIUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = OrderAppSwiftUI;
-			};
-			name = Debug;
-		};
-		A298348C2DA794C800394421 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fachri.OrderAppSwiftUIUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = OrderAppSwiftUI;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -538,15 +442,6 @@
 			buildConfigurations = (
 				A29834882DA794C800394421 /* Debug */,
 				A29834892DA794C800394421 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A298348A2DA794C800394421 /* Build configuration list for PBXNativeTarget "OrderAppSwiftUIUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A298348B2DA794C800394421 /* Debug */,
-				A298348C2DA794C800394421 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
