@@ -52,12 +52,39 @@ struct OrderView: View {
                         }
                         .padding(.top)
                         
-                        Button("Place Order") {
-                            if viewModel.products.filter({ $0.isSelected }).isEmpty {
-                                alertMessage = "Please select at least one item before placing an order."
-                                showAlert = true
-                            } else {
-                                viewModel.placeOrder()
+                        HStack {
+                            Button(action: {
+                                if viewModel.products.filter({ $0.isSelected }).isEmpty {
+                                    alertMessage = "Please select at least one item before placing an order."
+                                    showAlert = true
+                                } else {
+                                    viewModel.placeOrder()
+                                }
+                            }) {
+                                Text("Order")
+                                    .frame(maxWidth: .infinity)
+                                    .padding()
+                                    .font(.system(size: 10))
+                                    .background(Color.blue)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(8)
+                            }
+
+                            Button(action: {
+                                if viewModel.products.filter({ $0.isSelected }).isEmpty {
+                                    alertMessage = "Please select at least one item before placing an order."
+                                    showAlert = true
+                                } else {
+                                    viewModel.placeOrderEvenDistribute()
+                                }
+                            }) {
+                                Text("Order Evenly Distribute")
+                                    .frame(maxWidth: .infinity)
+                                    .padding()
+                                    .font(.system(size: 10))
+                                    .background(Color.green)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(8)
                             }
                         }
                         .padding()

@@ -16,6 +16,7 @@ class OrderViewModel: ObservableObject {
     private let fetchProductsUseCase: FetchProductsUseCase
     private let fetchCourierRulesUseCase: FetchCourierRulesUseCase
     private let placeOrderUseCase = PlaceOrderUseCase()
+    private let placeOrderEvenlyDistributeUseCase = PlaceOrderEvenlyDistributeUseCase()
 
     init(
         fetchProductsUseCase: FetchProductsUseCase = FetchProductsUseCase(repository: ProductRepository()),
@@ -40,6 +41,11 @@ class OrderViewModel: ObservableObject {
     func placeOrder() {
         let selectedItems = products.filter { $0.isSelected }
         packages = placeOrderUseCase.execute(selectedItems, courierRules: courierRules)
+    }
+    
+    func placeOrderEvenDistribute() {
+        let selectedItems = products.filter { $0.isSelected }
+        packages = placeOrderEvenlyDistributeUseCase.execute(selectedItems, courierRules: courierRules)
     }
 
     func resetPackages() {
